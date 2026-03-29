@@ -2,6 +2,8 @@ backend:
   name: github
   repo: xinapess-cmd/klaproject
   branch: main
+  base_url: https://klaprojects.net
+  auth_endpoint: admin/
 
 media_folder: "images"
 public_folder: "/images"
