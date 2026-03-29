@@ -2,32 +2,13 @@ backend:
   name: github
   repo: xinapess-cmd/klaproject
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "images"
 public_folder: "images"
 
 collections:
-  - name: "parametres"
-    label: "Paramètres généraux"
-    files:
-      - name: "contact"
-        label: "Contact & WhatsApp"
-        file: "data/contact.json"
-        fields:
-          - {label: "Numéro WhatsApp", name: "whatsapp", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Adresse", name: "adresse", widget: "string"}
-
-  - name: "hero"
-    label: "Page d'accueil - Hero"
-    files:
-      - name: "hero"
-        label: "Textes Hero"
-        file: "data/hero.json"
-        fields:
-          - {label: "Titre principal", name: "titre", widget: "string"}
-          - {label: "Sous-titre", name: "description", widget: "text"}
-
   - name: "projets"
     label: "Portfolio / Projets"
     folder: "data/projets"
