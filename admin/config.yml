@@ -2,21 +2,17 @@ backend:
   name: github
   repo: xinapess-cmd/klaproject
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
 
 media_folder: "images"
-public_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "projets"
-    label: "Portfolio / Projets"
+    label: "Projets"
     folder: "data/projets"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Nom du projet", name: "titre", widget: "string"}
-      - {label: "Catégorie", name: "categorie", widget: "select", options: ["Architecture", "Design Intérieur", "Rénovation", "Construction"]}
+      - {label: "Titre", name: "titre", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Année", name: "annee", widget: "string"}
