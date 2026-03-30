@@ -1,0 +1,76 @@
+content:
+  - name: parametres
+    label: "ParamÃ¨tres gÃ©nÃ©raux"
+    type: file
+    path: index.html
+    fields:
+      - name: hero_titre
+        label: "Titre principal (Hero)"
+        type: string
+      - name: hero_sous_titre
+        label: "Sous-titre Hero"
+        type: string
+      - name: a_propos_titre
+        label: "Titre - Ã€ propos"
+        type: string
+      - name: a_propos_texte
+        label: "Texte - Ã€ propos"
+        type: rich-text
+      - name: contact_telephone
+        label: "TÃ©lÃ©phone"
+        type: string
+      - name: contact_email
+        label: "Email"
+        type: string
+      - name: contact_adresse
+        label: "Adresse"
+        type: string
+
+  - name: projets
+    label: "Projets"
+    type: collection
+    path: content/projets
+    fields:
+      - name: titre
+        label: "Titre du projet"
+        type: string
+      - name: description
+        label: "Description"
+        type: rich-text
+      - name: categorie
+        label: "CatÃ©gorie"
+        type: string
+      - name: annee
+        label: "AnnÃ©e"
+        type: string
+      - name: image
+        label: "Image principale"
+        type: image
+      - name: images_galerie
+        label: "Galerie d'images"
+        type: image
+        list: true
+
+  - name: equipe
+    label: "Membres de l'Ã©quipe"
+    type: collection
+    path: content/equipe
+    fields:
+      - name: nom
+        label: "Nom complet"
+        type: string
+      - name: poste
+        label: "Poste / Fonction"
+        type: string
+      - name: bio
+        label: "Biographie"
+        type: rich-text
+      - name: photo
+        label: "Photo"
+        type: image
+      - name: email
+        label: "Email"
+        type: string
+      - name: linkedin
+        label: "LinkedIn (lien)"
+        type: string
