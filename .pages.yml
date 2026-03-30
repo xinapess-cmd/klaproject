@@ -1,3 +1,7 @@
+media:
+  input: assets/images
+  output: /assets/images
+
 content:
   - name: parametres
     label: "ParamÃ¨tres gÃ©nÃ©raux"
